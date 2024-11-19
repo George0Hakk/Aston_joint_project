@@ -1,6 +1,6 @@
-package org.Aston.DAO;
+package org.Aston.DB.DAO;
 
-import org.Aston.Entity.Vacancy;
+import org.Aston.DB.Entity.Vacancy;
 
 import java.util.List;
 

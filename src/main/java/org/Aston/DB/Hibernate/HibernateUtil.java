@@ -1,3 +1,4 @@
+/*
 package org.Aston.Hibernate;
 
 import org.hibernate.HibernateException;
@@ -16,3 +17,4 @@ public class HibernateUtil {
         }
     }
 }
+*/
