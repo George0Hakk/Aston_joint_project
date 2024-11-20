@@ -1,5 +1,5 @@
 // TODO закоментировано нужно править pom xml --
-package org.Aston.DB.Entity;
+package org.Aston.Entity;
 public class Vacancy {
     private long id;
     private String vacancyName;
