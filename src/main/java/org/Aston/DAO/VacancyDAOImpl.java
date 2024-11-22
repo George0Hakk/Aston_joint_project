@@ -15,14 +15,14 @@ public class VacancyDAOImpl implements VacancyDAO{
     public void save(Vacancy vacancy) {
         Session session = sessionFactory.openSession();
         Transaction transaction=session.beginTransaction();
-        session.save(vacancy);
+        session.persist(vacancy);
 
         transaction.commit();
         session.close();
     }
 
     @Override
-    public Vacancy findById(Long id) {
+    public Vacancy getVacancyById(int id) {
         Session session = sessionFactory.openSession();
         Vacancy vacancy=session.get(Vacancy.class, id);
         session.close();
@@ -30,7 +30,7 @@ public class VacancyDAOImpl implements VacancyDAO{
     }
 
     @Override
-    public Vacancy findByName(String Name) {
+    public Vacancy getVacancyByName(String Name) {
         Session session = sessionFactory.openSession();
         Vacancy vacancy=session.get(Vacancy.class, Name);
         session.close();
@@ -38,10 +38,20 @@ public class VacancyDAOImpl implements VacancyDAO{
     }
 
     @Override
-    public List<Vacancy> findAll() {
+    public List<Vacancy> getAll() {
         Session session = sessionFactory.openSession();
         List<Vacancy> vacancies=session.createQuery("from Vacancy",Vacancy.class).list();
         session.close();
         return vacancies;
+    }
+
+    @Override
+    public void delete(Vacancy vacancy) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction=session.beginTransaction();
+        session.createQuery("delete from Vacancy where id="+vacancy.getId()).executeUpdate();
+
+        transaction.commit();
+        session.close();
     }
 }

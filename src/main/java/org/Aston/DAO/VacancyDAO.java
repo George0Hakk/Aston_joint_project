@@ -5,8 +5,9 @@ import org.Aston.Entity.Vacancy;
 import java.util.List;
 
 public interface VacancyDAO {
-    void save(Vacancy vacancy);
-    Vacancy findById(Long id);
-    Vacancy findByName(String Name);
-    List<Vacancy> findAll();
+    public void save(Vacancy vacancy);
+    public void delete(Vacancy vacancy);
+    public Vacancy getVacancyById(int id);
+    public Vacancy getVacancyByName(String Name);
+    public List<Vacancy> getAll();
 }
