@@ -6,7 +6,9 @@ import java.util.List;
 
 public interface VacancyDAO {
     void save(Vacancy vacancy);
-    Vacancy findById(Long id);
-    Vacancy findByName(String Name);
-    List<Vacancy> findAll();
+    Vacancy getVacancyById(int id);
+    Vacancy getVacancyByName(String Name);
+    List<Vacancy> getAll();
+    void delete(Vacancy vacancy);
 }
+

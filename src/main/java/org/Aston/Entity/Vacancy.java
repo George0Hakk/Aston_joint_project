@@ -1,5 +1,4 @@
 package org.Aston.Entity;
-
 import jakarta.persistence.*;
 
 import java.util.Objects;
@@ -91,6 +90,7 @@ public class Vacancy {
         this.conditions = conditions;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -124,3 +124,4 @@ public class Vacancy {
                 '}';
     }
 }
+
