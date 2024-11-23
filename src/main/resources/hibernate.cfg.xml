@@ -21,6 +21,6 @@
         <property name="hibernate.show_sql">true</property>
 
         <!-- Маппинг сущностей -->
-        <mapping class="org.Aston.DB.Entity.Vacancy"/>
+        <mapping class="org.Aston.Entity.Vacancy"/>
     </session-factory>
 </hibernate-configuration>

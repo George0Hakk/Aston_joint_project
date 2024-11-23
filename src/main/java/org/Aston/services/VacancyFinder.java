@@ -1,6 +1,6 @@
 package org.Aston.services;
 
-import org.Aston.DB.Entity.Vacancy;
+import org.Aston.Entity.Vacancy;
 
 import java.util.List;
 

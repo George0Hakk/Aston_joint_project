@@ -1,95 +1,5 @@
-// TODO закоментировано нужно править pom xml --
-package org.Aston.DB.Entity;
-public class Vacancy {
-    private long id;
-    private String vacancyName;
-    private Integer salary;
-    private String companyName;
-    private String URL;
-    private String requirements;
-    private String conditions;
-
-    public Vacancy(String vacancyName, Integer salary, String companyName, String URL, String requirements, String conditions) {
-        this.vacancyName = vacancyName;
-        this.salary = salary;
-        this.companyName = companyName;
-        this.URL = URL;
-        this.requirements = requirements;
-        this.conditions = conditions;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public String getVacancyName() {
-        return vacancyName;
-    }
-
-    public Integer getSalary() {
-        return salary;
-    }
-
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    public String getURL() {
-        return URL;
-    }
-
-    public String getRequirements() {
-        return requirements;
-    }
-
-    public String getConditions() {
-        return conditions;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public void setVacancyName(String vacancyName) {
-        this.vacancyName = vacancyName;
-    }
-
-    public void setSalary(Integer salary) {
-        this.salary = salary;
-    }
-
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
-    }
-
-    public void setURL(String URL) {
-        this.URL = URL;
-    }
-
-    public void setRequirements(String requirements) {
-        this.requirements = requirements;
-    }
-
-    public void setConditions(String conditions) {
-        this.conditions = conditions;
-    }
-
-    @Override
-    public String toString() {
-        return "Vacancy{" +
-                "id=" + id +
-                ", vacancyName='" + vacancyName + '\'' +
-                ", salary=" + salary +
-                ", companyName='" + companyName + '\'' +
-                ", URL='" + URL + '\'' +
-                ", requirements='" + requirements + '\'' +
-                ", conditions='" + conditions + '\'' +
-                '}';
-    }
-}
-
-//закоментировано нужно править pom xml --
-/*import jakarta.persistence.*;
+package org.Aston.Entity;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
@@ -112,6 +22,7 @@ public class Vacancy {
     @Column(name = "conditions")
     private String conditions;
 
+    public Vacancy() {
     }
 
     public Vacancy(String vacancyName, Integer salary, String companyName, String URL, String requirements, String conditions) {
@@ -177,7 +88,7 @@ public class Vacancy {
 
     public void setConditions(String conditions) {
         this.conditions = conditions;
-    }public Vacancy() {
+    }
 
 
     @Override
@@ -213,4 +124,4 @@ public class Vacancy {
                 '}';
     }
 }
-*/
+

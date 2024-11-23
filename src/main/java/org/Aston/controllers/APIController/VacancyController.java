@@ -1,6 +1,6 @@
 package org.Aston.controllers.APIController;
 
-import org.Aston.DB.Entity.Vacancy;
+import org.Aston.Entity.Vacancy;
 import org.Aston.services.VacancyFinder;
 import org.Aston.services.VacancyService;
 import org.springframework.http.HttpStatus;
